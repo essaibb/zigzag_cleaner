@@ -1,0 +1,18 @@
+<launch>
+
+    <!-- تحديد نوع الروبوت -->
+    <env name="TURTLEBOT3_MODEL" value="waffle"/>
+
+    <!-- تشغيل Gazebo -->
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_house.launch"/>
+
+    <!-- تشغيل SLAM -->
+    <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch"/>
+
+    <!-- عقدة تتبع الجدار -->
+    <node pkg="zigzag_cleaner"
+          type="wall_follow_node.py"
+          name="wall_follower_node"
+          output="screen"/>
+
+</launch>

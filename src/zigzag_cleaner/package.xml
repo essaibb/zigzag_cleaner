@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>zigzag_cleaner</name>
+  <version>0.0.1</version>  <!-- أو زد الرقم لاحقاً -->
+  <description>Zigzag cleaning node for ROS robot using LaserScan</description>
+  <maintainer email="essa@example.com">عيسى</maintainer>  <!-- غيّر الإيميل -->
+  <license>BSD</license>  <!-- أو MIT أو Apache-2.0 حسب رغبتك -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- استخدام <depend> للبساطة - كافية جداً لحزمة Python بسيطة -->
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- إذا كنت تخطط لنشر الحزمة أو مشاركتها، أضف روابط (اختياري) -->
+  <!-- <url type="website">https://github.com/yourusername/zigzag_cleaner</url> -->
+  <!-- <url type="bugtracker">https://github.com/yourusername/zigzag_cleaner/issues</url> -->
+  
+  <export>
+    <!-- يمكن إضافة أشياء هنا لاحقاً إذا احتجت -->
+  </export>
+</package>

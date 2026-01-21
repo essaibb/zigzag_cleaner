@@ -1,0 +1,15 @@
+<launch>
+
+    <!-- تحديد نوع الروبوت -->
+    <env name="TURTLEBOT3_MODEL" value="Waffle"/>
+
+    <!-- تشغيل Gazebo فقط -->
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_house.launch"/>
+
+    <!-- عقدة التنظيف ZigZag -->
+    <node pkg="zigzag_cleaner"
+          type="zigzag_node.py"
+          name="zigzag_node"
+          output="screen"/>
+
+</launch>
